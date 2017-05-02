@@ -1,6 +1,7 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, TextInput, StyleSheet } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 
 import SegmentedControlTab from 'react-native-segmented-control-tab'
 
@@ -47,9 +48,9 @@ class Calculator extends Component {
 
 	render() {
 		return (
-			<View>
-				<View>
-					<Text>Tips Calculator</Text>
+			<View style={styles.container}>
+				<View style={{ marginBottom: 30 }}>
+					<Text onPress={ Actions.settingPage }>>>> Go to setting</Text>
 				</View>
 				
 				<View>
@@ -94,9 +95,10 @@ class Calculator extends Component {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
+		// justifyContent: 'center',
+		// alignItems: 'center',
 		backgroundColor: '#fff',
+		marginTop: 80,
 	},
 });
 
