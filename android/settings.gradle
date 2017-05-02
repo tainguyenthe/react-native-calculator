@@ -1,0 +1,3 @@
+rootProject.name = 'PreworkCalculator'
+
+include ':app'
