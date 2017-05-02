@@ -58,6 +58,8 @@ class Calculator extends Component {
 						style={{height: 40, borderColor: 'gray', borderWidth: 1}} 
 						placeholder="Type here"
 						onChangeText={(billAmount => this.handleBillAmountChange(billAmount))}
+						keyboardType='numeric'
+						maxLength={10}
 					/>
 				</View>
 
